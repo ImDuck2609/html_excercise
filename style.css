@@ -3,6 +3,8 @@
   --secondary-color: #f8f9fa;
   --text-color: #333;
   --hover-color: #0056b3;
+  --focus-ring: rgba(0, 123, 255, 0.25);
+  --focus-outline: 3px solid rgba(0, 123, 255, 0.45);
 }
 
 * {
@@ -12,7 +14,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   color: var(--text-color);
   background-color: #fff;
   line-height: 1.6;
@@ -40,12 +42,16 @@ body {
   text-decoration: none;
   color: var(--text-color);
   margin-left: 1.5rem;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease, background-color 0.15s ease;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.35rem;
+  display: inline-block;
 }
 
 .header__nav a:hover,
 .header__nav a:focus {
   color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
 .hero {
@@ -78,9 +84,15 @@ body {
   border-radius: 0.5rem;
 }
 
-.hero__cta:hover{
+.hero__cta:hover {
   background: var(--hover-color);
   cursor: pointer;
+}
+.hero__cta:focus,
+.hero__cta:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--focus-ring);
+  border-radius: 0.5rem;
 }
 
 .footer {
@@ -91,4 +103,130 @@ body {
   margin-top: 2rem;
 }
 
+.testkey,
+.login {
+  padding: 2rem 1rem;
+}
 
+.testkey__container,
+.login__container {
+  max-width: 640px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+.testkey__title,
+.login__title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.testkey__form,
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.testkey__label,
+.login__label {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+  display: inline-block;
+}
+
+.testkey__input,
+.login__input {
+  padding: 0.65rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.45rem;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.testkey__button,
+.login__button {
+  margin-top: 0.5rem;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.45rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--focus-ring);
+  border-radius: 0.35rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    padding-bottom: 0.25rem;
+  }
+
+  .header__nav a {
+    margin-left: 0;
+    padding: 0.6rem 0.75rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero__title {
+    font-size: 1.8rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .testkey__container,
+  .login__container {
+    margin: 1.5rem auto;
+    padding: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .testkey__title,
+  .login__title {
+    font-size: 1.35rem;
+  }
+
+  .testkey__input,
+  .login__input {
+    font-size: 1rem;
+    padding: 0.65rem;
+  }
+
+  .testkey__button,
+  .login__button {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+}
