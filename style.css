@@ -3,7 +3,6 @@
   --secondary-color: #f8f9fa;
   --text-color: #333;
   --hover-color: #0056b3;
-  --focus-outline: 2px solid #ffbf00;
 }
 
 * {
@@ -47,11 +46,14 @@ body {
 .header__nav a:hover,
 .header__nav a:focus {
   color: var(--primary-color);
-  outline: var(--focus-outline);
 }
 
 .hero {
-  background: linear-gradient(120deg, #007bff, #5eb8ff);
+  background-image: url("https://www.cambridgeenglish.org/Images/test-your-english-banner-2019.jpg");
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
   padding: 5rem 1rem;
@@ -69,9 +71,24 @@ body {
 }
 
 .hero__cta {
-  background: #fff;
-  color: var(--primary-color);
+  background: var(--primary-color);
+  color: #fff;
   border: none;
   padding: 0.75rem 1.75rem;
   border-radius: 0.5rem;
 }
+
+.hero__cta:hover{
+  background: var(--hover-color);
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--secondary-color);
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+}
+
+

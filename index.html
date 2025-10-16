@@ -4,79 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="MockTest helps students practice and prepare for exams effectively.">
-  <title>MockTest | Prepare Smarter</title>
+  <title>GreenPrep</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
-    <div class="header__logo">MockTest</div>
+    <div class="header__logo">GreenPrep</div>
     <nav class="header__nav">
-      <a href="#features">Features</a>
-      <a href="#how">How It Works</a>
+      <a href="login.html">Login</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
-
   <main>
     <section class="hero">
       <div class="hero__inner">
-        <h1 class="hero__title">Test Your Knowledge with MockTest</h1>
-        <p class="hero__subtitle">Practice realistic mock exams to prepare for success — anytime, anywhere.</p>
-        <button class="hero__cta">Start Free Test</button>
-      </div>
-    </section>
-
-    <section id="features" class="section section--alt">
-      <div class="section__text">
-        <h2>Real Exam Simulations</h2>
-        <p>Experience authentic test conditions and timing to build confidence before the real exam.</p>
-        <a href="#" class="section__link">Learn more</a>
-      </div>
-      <div class="section__media">
-        <img src="https://cdn-icons-png.flaticon.com/512/3652/3652267.png" alt="Exam simulation illustration">
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section__media">
-        <img src="https://cdn-icons-png.flaticon.com/512/5204/5204726.png" alt="Feedback graphic">
-      </div>
-      <div class="section__text">
-        <h2>Instant Feedback</h2>
-        <p>Get detailed feedback and explanations right after submission to enhance your learning process.</p>
-        <a href="#" class="section__link">Learn more</a>
-      </div>
-    </section>
-
-    <section class="section section--alt">
-      <div class="section__text">
-        <h2>Progress Tracking</h2>
-        <p>Visualize your performance trends and target your weak areas to improve effectively.</p>
-        <a href="#" class="section__link">Learn more</a>
-      </div>
-      <div class="section__media">
-        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149670.png" alt="Progress tracking chart">
-      </div>
-    </section>
-
-    <section class="features-section">
-      <h2>Why Choose MockTest?</h2>
-      <div class="features-grid">
-        <div class="feature" tabindex="0">
-          <h3>Comprehensive Practice</h3>
-          <p>Choose from various subjects and difficulty levels to suit your preparation goals.</p>
-        </div>
-        <div class="feature" tabindex="0">
-          <h3>Accessible Anywhere</h3>
-          <p>Take tests on desktop or mobile devices with an easy-to-use interface.</p>
-        </div>
-        <div class="feature" tabindex="0">
-          <h3>Community Insights</h3>
-          <p>Compare your scores with peers and track overall trends.</p>
-        </div>
+        <h1 class="hero__title">Test Your Knowledge with GreenPrep</h1>
+        <p class="hero__subtitle">Enter the key your teacher gave you and start immediately!!</p>
+        <button id="enterButton" class="hero__cta">Enter test key</button>
       </div>
     </section>
   </main>
+<script>
+    document.getElementById("enterButton").onclick = function () {
+        location.href = "testkey.html";
+    };
+</script>
 
   <footer class="footer">
     <p>&copy; 2025 MockTest. All rights reserved.</p>
