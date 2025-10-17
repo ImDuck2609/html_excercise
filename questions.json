@@ -1,0 +1,144 @@
+[
+    {
+        "id": "q001",
+        "prompt": "I ____ to work every day.",
+        "options": [
+            { "id": "a", "text": "go" },
+            { "id": "b", "text": "am going" },
+            { "id": "c", "text": "goes" },
+            { "id": "d", "text": "went" }
+        ],
+        "correct": ["a"],
+        "points": 1
+    },
+    {
+        "id": "q002",
+        "prompt": "She is looking forward ___ the trip.",
+        "options": [
+            { "id": "a", "text": "to" },
+            { "id": "b", "text": "for" },
+            { "id": "c", "text": "at" },
+            { "id": "d", "text": "with" }
+        ],
+        "correct": ["a"],
+        "points": 1
+    },
+    {
+        "id": "q003",
+        "prompt": "Choose the closest meaning of 'abundant'.",
+        "options": [
+            { "id": "a", "text": "scarce" },
+            { "id": "b", "text": "plentiful" },
+            { "id": "c", "text": "rare" },
+            { "id": "d", "text": "tiny" }
+        ],
+        "correct": ["b"],
+        "points": 1
+    },
+    {
+        "id": "q004",
+        "prompt": "Why did Anna leave early? Passage: \"Anna left early because she had an appointment. She took a taxi and arrived on time.\"",
+        "options": [
+            { "id": "a", "text": "She had an appointment." },
+            { "id": "b", "text": "She was tired." },
+            { "id": "c", "text": "She missed the bus." },
+            { "id": "d", "text": "She wanted to shop." }
+        ],
+        "correct": ["a"],
+        "points": 2
+    },
+    {
+        "id": "q005",
+        "prompt": "He gave ___ smoking last year.",
+        "options": [
+            { "id": "a", "text": "up" },
+            { "id": "b", "text": "in" },
+            { "id": "c", "text": "off" },
+            { "id": "d", "text": "away" }
+        ],
+        "correct": ["a"],
+        "points": 1
+    },
+    {
+        "id": "q006",
+        "prompt": "Identify and correct the error: \"She don't like coffee.\"",
+        "options": [
+            { "id": "a", "text": "She doesn't like coffee." },
+            { "id": "b", "text": "She don't likes coffee." },
+            { "id": "c", "text": "She doesn't likes coffee." },
+            { "id": "d", "text": "She not like coffee." }
+        ],
+        "correct": ["a"],
+        "points": 2
+    },
+    {
+        "id": "q007",
+        "prompt": "Fill the blanks: \"If it ___ tomorrow, we will cancel the picnic.\"",
+        "options": [
+            { "id": "a", "text": "rains" },
+            { "id": "b", "text": "rain" },
+            { "id": "c", "text": "rained" },
+            { "id": "d", "text": "will rain" }
+        ],
+        "correct": ["a"],
+        "points": 1
+    },
+    {
+        "id": "q008",
+        "prompt": "\"Cats are mammals.\" True or False?",
+        "options": [
+            { "id": "a", "text": "True" },
+            { "id": "b", "text": "False" }
+        ],
+        "correct": ["a"],
+        "points": 1
+    },
+    {
+        "id": "q009",
+        "prompt": "Reorder into a correct question: \"you / have / Do / time / ?\"",
+        "options": [
+            { "id": "a", "text": "Do you have time?" },
+            { "id": "b", "text": "Have you time?" },
+            { "id": "c", "text": "You have time?" },
+            { "id": "d", "text": "Do have you time?" }
+        ],
+        "correct": ["a"],
+        "points": 1
+    },
+    {
+        "id": "q010",
+        "prompt": "Passive voice: Convert to passive: \"They will finish the project next week.\"",
+        "options": [
+            { "id": "a", "text": "The project will be finished next week." },
+            { "id": "b", "text": "Next week, the project is finished." },
+            { "id": "c", "text": "Next week, they will finish the project." },
+            { "id": "d", "text": "The project will finish next week." }
+        ],
+        "correct": ["a"],
+        "points": 2
+    },
+    {
+        "id": "q011",
+        "prompt": "Choose the correct collocation: \"It was a difficult ___ to make.\"",
+        "options": [
+            { "id": "a", "text": "decision" },
+            { "id": "b", "text": "choose" },
+            { "id": "c", "text": "create" },
+            { "id": "d", "text": "act" }
+        ],
+        "correct": ["a"],
+        "points": 1
+    },
+    {
+        "id": "q012",
+        "prompt": "This is the book ___ I told you about.",
+        "options": [
+            { "id": "a", "text": "whom" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "that" },
+            { "id": "d", "text": "where" }
+        ],
+        "correct": ["c"],
+        "points": 1
+    }
+]

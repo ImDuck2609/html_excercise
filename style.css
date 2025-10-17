@@ -169,3 +169,22 @@ textarea:focus-visible {
   box-shadow: 0 0 0 4px var(--focus-ring);
   border-radius: 0.35rem;
 }
+
+.question-item {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-left: 4px solid var(--primary-color);
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.options  {
+  display: flex;
+  flex-direction: column;
+}
+
+options label,input {
+  padding-left: 8px;
+  cursor: pointer;
+}
+
