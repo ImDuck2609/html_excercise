@@ -9,8 +9,8 @@ async function loadQuestions() {
 
   try {
     const res = await fetch("questions.json");
-    if (!res.ok) throw new Error("Network error");
 
+    if (!res.ok) throw new Error("Network error");
     const data = await res.json();
     if (data.length === 0) {
       state.textContent = "No questions available.";
@@ -24,12 +24,15 @@ async function loadQuestions() {
         <div class="question-item">
           <h3>${q.prompt}</h3>
           <div class="options">
-          ${q.options
-            .map(
-              (option) => `
-              <label><input type="radio" name="answer" value="${option.id}">&nbsp ${option.id}. ${option.text}</label>`
-            )
-            .join("")}
+            ${q.options
+              .map(
+                (option) => `
+                <label>
+                  <input type="radio" name="answer-${q.id}" value="${option.id}">
+                  &nbsp ${option.id}. ${option.text}
+                </label>`
+              )
+              .join("")}
           </div>
         </div>`;
       list.appendChild(div);
@@ -39,8 +42,10 @@ async function loadQuestions() {
   }
 }
 
-module.exports = { loadQuestions };
-
-if (typeof window !== "undefined" && process.env.JEST_WORKER_ID === undefined) {
+if (typeof window !== "undefined") {
   loadQuestions();
+}
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { loadQuestions };
 }
