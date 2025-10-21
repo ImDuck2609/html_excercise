@@ -8,8 +8,7 @@
             { "id": "c", "text": "goes" },
             { "id": "d", "text": "went" }
         ],
-        "correct": ["a"],
-        "points": 1
+        "correct": ["a"]
     },
     {
         "id": "q002",
@@ -20,8 +19,7 @@
             { "id": "c", "text": "at" },
             { "id": "d", "text": "with" }
         ],
-        "correct": ["a"],
-        "points": 1
+        "correct": ["a"]
     },
     {
         "id": "q003",
@@ -32,8 +30,7 @@
             { "id": "c", "text": "rare" },
             { "id": "d", "text": "tiny" }
         ],
-        "correct": ["b"],
-        "points": 1
+        "correct": ["b"]
     },
     {
         "id": "q004",
@@ -44,8 +41,7 @@
             { "id": "c", "text": "She missed the bus." },
             { "id": "d", "text": "She wanted to shop." }
         ],
-        "correct": ["a"],
-        "points": 2
+        "correct": ["a"]
     },
     {
         "id": "q005",
@@ -56,8 +52,7 @@
             { "id": "c", "text": "off" },
             { "id": "d", "text": "away" }
         ],
-        "correct": ["a"],
-        "points": 1
+        "correct": ["a"]
     },
     {
         "id": "q006",
@@ -68,8 +63,7 @@
             { "id": "c", "text": "She doesn't likes coffee." },
             { "id": "d", "text": "She not like coffee." }
         ],
-        "correct": ["a"],
-        "points": 2
+        "correct": ["a"]
     },
     {
         "id": "q007",
@@ -80,8 +74,7 @@
             { "id": "c", "text": "rained" },
             { "id": "d", "text": "will rain" }
         ],
-        "correct": ["a"],
-        "points": 1
+        "correct": ["a"]
     },
     {
         "id": "q008",
@@ -90,8 +83,7 @@
             { "id": "a", "text": "True" },
             { "id": "b", "text": "False" }
         ],
-        "correct": ["a"],
-        "points": 1
+        "correct": ["a"]
     },
     {
         "id": "q009",
@@ -102,8 +94,7 @@
             { "id": "c", "text": "You have time?" },
             { "id": "d", "text": "Do have you time?" }
         ],
-        "correct": ["a"],
-        "points": 1
+        "correct": ["a"]
     },
     {
         "id": "q010",
@@ -114,8 +105,7 @@
             { "id": "c", "text": "Next week, they will finish the project." },
             { "id": "d", "text": "The project will finish next week." }
         ],
-        "correct": ["a"],
-        "points": 2
+        "correct": ["a"]
     },
     {
         "id": "q011",
@@ -126,8 +116,7 @@
             { "id": "c", "text": "create" },
             { "id": "d", "text": "act" }
         ],
-        "correct": ["a"],
-        "points": 1
+        "correct": ["a"]
     },
     {
         "id": "q012",
@@ -138,7 +127,6 @@
             { "id": "c", "text": "that" },
             { "id": "d", "text": "where" }
         ],
-        "correct": ["c"],
-        "points": 1
+        "correct": ["c"]
     }
 ]
